@@ -13,6 +13,14 @@
 		C21B17A31F21854700286183 /* BinaryDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21B17A21F21854700286183 /* BinaryDecoder.swift */; };
 		C21B17A51F21856000286183 /* BinaryCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21B17A41F21856000286183 /* BinaryCodable.swift */; };
 		C2A46D0B1F23AF94005FF91D /* BinaryCodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A46D0A1F23AF94005FF91D /* BinaryCodableExtensions.swift */; };
+		F2ED157621A72D4C0090564D /* BinaryCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21B17A41F21856000286183 /* BinaryCodable.swift */; };
+		F2ED157721A72D4C0090564D /* BinaryCodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A46D0A1F23AF94005FF91D /* BinaryCodableExtensions.swift */; };
+		F2ED157821A72D4C0090564D /* BinaryDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21B17A21F21854700286183 /* BinaryDecoder.swift */; };
+		F2ED157921A72D4C0090564D /* BinaryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21B17911F21828D00286183 /* BinaryEncoder.swift */; };
+		F2ED158521A72DA60090564D /* BinaryCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21B17A41F21856000286183 /* BinaryCodable.swift */; };
+		F2ED158621A72DA60090564D /* BinaryCodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A46D0A1F23AF94005FF91D /* BinaryCodableExtensions.swift */; };
+		F2ED158721A72DA60090564D /* BinaryDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21B17A21F21854700286183 /* BinaryDecoder.swift */; };
+		F2ED158821A72DA60090564D /* BinaryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21B17911F21828D00286183 /* BinaryEncoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +33,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F2ED156D21A72D320090564D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2ED157C21A72D950090564D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C21B178A1F21827F00286183 /* libBinaryCoder.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libBinaryCoder.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		C21B17911F21828D00286183 /* BinaryEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryEncoder.swift; sourceTree = "<group>"; };
@@ -34,6 +63,8 @@
 		C21B17A21F21854700286183 /* BinaryDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryDecoder.swift; sourceTree = "<group>"; };
 		C21B17A41F21856000286183 /* BinaryCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryCodable.swift; sourceTree = "<group>"; };
 		C2A46D0A1F23AF94005FF91D /* BinaryCodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryCodableExtensions.swift; sourceTree = "<group>"; };
+		F2ED156F21A72D320090564D /* libBinaryCoder.iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBinaryCoder.iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2ED157E21A72D950090564D /* libBinaryCoder.watchOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBinaryCoder.watchOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +80,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C21B179C1F2182DD00286183 /* libBinaryCoder.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2ED156C21A72D320090564D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2ED157B21A72D950090564D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +117,8 @@
 			children = (
 				C21B178A1F21827F00286183 /* libBinaryCoder.dylib */,
 				C21B17971F2182DD00286183 /* BinaryEncoderTests.xctest */,
+				F2ED156F21A72D320090564D /* libBinaryCoder.iOS.a */,
+				F2ED157E21A72D950090564D /* libBinaryCoder.watchOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,13 +180,47 @@
 			productReference = C21B17971F2182DD00286183 /* BinaryEncoderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F2ED156E21A72D320090564D /* BinaryCoder.iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2ED157521A72D320090564D /* Build configuration list for PBXNativeTarget "BinaryCoder.iOS" */;
+			buildPhases = (
+				F2ED156B21A72D320090564D /* Sources */,
+				F2ED156C21A72D320090564D /* Frameworks */,
+				F2ED156D21A72D320090564D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BinaryCoder.iOS;
+			productName = BinaryCoder.iOS;
+			productReference = F2ED156F21A72D320090564D /* libBinaryCoder.iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F2ED157D21A72D950090564D /* BinaryCoder.watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2ED158221A72D950090564D /* Build configuration list for PBXNativeTarget "BinaryCoder.watchOS" */;
+			buildPhases = (
+				F2ED157A21A72D950090564D /* Sources */,
+				F2ED157B21A72D950090564D /* Frameworks */,
+				F2ED157C21A72D950090564D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BinaryCoder.watchOS;
+			productName = BinaryCoder.watchOS;
+			productReference = F2ED157E21A72D950090564D /* libBinaryCoder.watchOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C21B17821F21827F00286183 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = mikeash;
 				TargetAttributes = {
@@ -150,6 +231,14 @@
 					C21B17961F2182DD00286183 = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 1010;
+					};
+					F2ED156E21A72D320090564D = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
+					F2ED157D21A72D950090564D = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -167,6 +256,8 @@
 			targets = (
 				C21B17891F21827F00286183 /* BinaryCoder */,
 				C21B17961F2182DD00286183 /* BinaryEncoderTests */,
+				F2ED156E21A72D320090564D /* BinaryCoder.iOS */,
+				F2ED157D21A72D950090564D /* BinaryCoder.watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -198,6 +289,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				C21B179A1F2182DD00286183 /* BinaryCoderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2ED156B21A72D320090564D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2ED157621A72D4C0090564D /* BinaryCodable.swift in Sources */,
+				F2ED157721A72D4C0090564D /* BinaryCodableExtensions.swift in Sources */,
+				F2ED157821A72D4C0090564D /* BinaryDecoder.swift in Sources */,
+				F2ED157921A72D4C0090564D /* BinaryEncoder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2ED157A21A72D950090564D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2ED158521A72DA60090564D /* BinaryCodable.swift in Sources */,
+				F2ED158621A72DA60090564D /* BinaryCodableExtensions.swift in Sources */,
+				F2ED158721A72DA60090564D /* BinaryDecoder.swift in Sources */,
+				F2ED158821A72DA60090564D /* BinaryEncoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +491,86 @@
 			};
 			name = Release;
 		};
+		F2ED157321A72D320090564D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T8GF25SAZN;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2ED157421A72D320090564D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T8GF25SAZN;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2ED158321A72D950090564D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T8GF25SAZN;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		F2ED158421A72D950090564D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T8GF25SAZN;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -404,6 +597,24 @@
 			buildConfigurations = (
 				C21B17A01F2182DD00286183 /* Debug */,
 				C21B17A11F2182DD00286183 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2ED157521A72D320090564D /* Build configuration list for PBXNativeTarget "BinaryCoder.iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2ED157321A72D320090564D /* Debug */,
+				F2ED157421A72D320090564D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2ED158221A72D950090564D /* Build configuration list for PBXNativeTarget "BinaryCoder.watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2ED158321A72D950090564D /* Debug */,
+				F2ED158421A72D950090564D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
